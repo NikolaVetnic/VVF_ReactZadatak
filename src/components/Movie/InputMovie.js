@@ -13,8 +13,8 @@ const defaultValues = {
 const InputMovie = props => {
   const [formValues, setFormValues] = useState(defaultValues);
 
-  const handleSubmit = event => {
-    event.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault();
 
     let movie = {
       id: Math.floor(Math.random() * 10000),
@@ -35,6 +35,20 @@ const InputMovie = props => {
     setFormValues({
       ...formValues,
       [name]: value,
+    });
+  };
+
+  const handleResetForm = e => {
+    e.preventDefault();
+    setFormValues({
+      id: 0,
+      title: '',
+      subtitle: '',
+      description: '',
+      year: 0,
+      imageUrl: '',
+      ratings: [],
+      rating: 0,
     });
   };
 
@@ -118,9 +132,14 @@ const InputMovie = props => {
           <br></br>
 
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-1">
               <button type="submit" className="btn btn-primary">
                 Submit
+              </button>
+            </div>
+            <div className="col-md-1">
+              <button type="button" className="btn btn-secondary" onClick={handleResetForm}>
+                Reset Form
               </button>
             </div>
           </div>

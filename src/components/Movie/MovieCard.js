@@ -72,6 +72,9 @@ const MovieCard = ({ movie, movies, setMovies }) => {
   return (
     <div className="movie-card">
       <div className="movie-card card">
+        <a href="#" className="badge badge-danger" onClick={handleDelete}>
+          Delete
+        </a>
         <img className="card-img-top" src={movie.imageUrl} alt="" />
         <div className="card-body">
           <h4 className="card-title">{movie.title}</h4>
@@ -79,22 +82,21 @@ const MovieCard = ({ movie, movies, setMovies }) => {
           <p className="text-justify" style={{ fontSize: '14px' }}>
             {movie.description}
           </p>
-
-          <button type="button" className="btn btn-danger" onClick={handleDelete}>
-            Delete
-          </button>
         </div>
         <div className="card-footer">
           <div className="clearfix">
             <div className="float-left mt-1">
               <StarRating rating={movie.rating} updateRating={updateRating} />
             </div>
-            <HoverableDiv handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut}>
-              <div className="card-footer-badge float-right badge badge-primary badge-pill">{movie.rating}</div>
-            </HoverableDiv>
+            <div
+              className="card-footer-badge float-right badge badge-primary badge-pill"
+              data-toggle="tooltip"
+              data-placement="top"
+              title={'Users rated : ' + (movie.ratings === undefined ? 1 : movie.ratings.length)}
+            >
+              {movie.rating}
+            </div>
           </div>
-
-          <div class="card">{isHovering && <HoverText ratings={movie.ratings} />}</div>
         </div>
       </div>
     </div>

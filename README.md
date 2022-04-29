@@ -1,5 +1,7 @@
 # React Movie Cards
 
+[![React Movie Cards](http://nikolapacekvetnic.rs/wp-content/uploads/2022/04/Screenshot-2022-04-29-at-15.29.28.png)](https://www.youtube.com/watch?v=nM-y_uBHvlE)
+
 A basic application that displays a list of movies as a list of cards. Each card provides movie detail such as title, subtitle, description, image, and rating.
 
 Go **[here](http://react-movie-cards.drminnaar.me/)** for live demo.
@@ -12,33 +14,33 @@ For styling, I have adopted bootstrap4 beta. I use SCSS for all custom written s
 
 The application is composed of the following components:
 
-* Header - A heading that displays application title
+- Header - A heading that displays application title
 
-* Movies - The primary (root) component that manages state for Movies and all underlying components. It is also responsible for connecting to _MovieService_ to retrieve movie data
+- Movies - The primary (root) component that manages state for Movies and all underlying components. It is also responsible for connecting to _MovieService_ to retrieve movie data
 
-* MovieList - Groups a collection of movies
+- MovieList - Groups a collection of movies
 
-* MovieCard - Represents a single instance of a movie
+- MovieCard - Represents a single instance of a movie
 
-* StarRating - Indicates average rating of a movie as a list of 5 stars
+- StarRating - Indicates average rating of a movie as a list of 5 stars
 
 Component Diagram
 ![Component Diagram](https://user-images.githubusercontent.com/33935506/34461060-3526427a-ee29-11e7-8e1c-03f91507c184.png)
 
 The following services are used to obtain movie data:
 
-* MovieService - A wrapper that retrieves data from a json file containing a list of movies
+- MovieService - A wrapper that retrieves data from a json file containing a list of movies
 
 Service Diagram
 ![Service Diagram](https://user-images.githubusercontent.com/33935506/34461059-34f6e87c-ee29-11e7-9678-848e3e3ffee9.png)
 
 This project also demonstrates:
 
-* a typcial React project layout structure
-* babel setup and configuration
-* webpack setup and configuration
-* eslint setup and configuration
-* SCSS setup and configuration
+- a typcial React project layout structure
+- babel setup and configuration
+- webpack setup and configuration
+- eslint setup and configuration
+- SCSS setup and configuration
 
 **Screenshots:**
 
@@ -50,51 +52,51 @@ This project also demonstrates:
 
 ## Developed With
 
-* [Node.js](https://nodejs.org/en/) - Javascript runtime
-* [React](https://reactjs.org/) - A javascript library for building user interfaces
-* [Babel](https://babeljs.io/) - A transpiler for javascript
-* [Webpack](https://webpack.js.org/) - A module bundler
-* [SCSS](http://sass-lang.com/) - A css metalanguage
-* [Bootstrap 4](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
-* [Surge] - Static web publishing for Front-End Developers
+- [Node.js](https://nodejs.org/en/) - Javascript runtime
+- [React](https://reactjs.org/) - A javascript library for building user interfaces
+- [Babel](https://babeljs.io/) - A transpiler for javascript
+- [Webpack](https://webpack.js.org/) - A module bundler
+- [SCSS](http://sass-lang.com/) - A css metalanguage
+- [Bootstrap 4](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
+- [Surge] - Static web publishing for Front-End Developers
 
 ---
 
 ## Related Projects
 
-* [react-starter]
+- [react-starter]
 
   A basic template that consists of the essential elements that are required to start building a React application
 
-* [react-clicker]
+- [react-clicker]
 
   A basic React app that allows one to increase, decrease, or reset a counter
 
-* [react-clock-basic]
+- [react-clock-basic]
 
   A basic clock that displays the current date and time
 
-* [react-timer-basic]
+- [react-timer-basic]
 
   A basic timer that will start a countdown based on an input of time in seconds
 
-* [react-timer-advanced]
+- [react-timer-advanced]
 
-   A basic countdown timer that offers an advanced UI experience
+  A basic countdown timer that offers an advanced UI experience
 
-* [react-masterminds]
+- [react-masterminds]
 
   A basic game of guessing a number with varying degrees of difficulty
 
-* [react-calculator-standard]
+- [react-calculator-standard]
 
   A calculator that provides the essential arithmetic operations, an expression builder, and a complete history of all expressions
 
-* [react-bitcoin-monitor]
+- [react-bitcoin-monitor]
 
   An app that monitors changes in the Bitcoin Price Index (BPI)
 
-* [react-weather-standard]
+- [react-weather-standard]
 
   A weather application that displays the current weather, daily forecasts, and hourly forecasts based on your current geolocation
 
@@ -108,8 +110,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 The following software is required to be installed on your system:
 
-* Node 8.x
-* Npm 3.x
+- Node 8.x
+- Npm 3.x
 
 Type the following commands in the terminal to verify your node and npm versions
 
@@ -122,29 +124,29 @@ npm -v
 
 Follow the following steps to get development environment running.
 
-* Clone _'react-movie-cards'_ repository from GitHub
+- Clone _'react-movie-cards'_ repository from GitHub
 
   ```bash
   git clone https://github.com/drminnaar/react-movie-cards.git
   ```
 
-   _OR USING SSH_
+  _OR USING SSH_
 
   ```bash
   git clone git@github.com:drminnaar/react-movie-cards.git
   ```
 
-* Install node modules
+- Install node modules
 
-   ```bash
-   cd react-movie-cards
-   npm install
-   npm dedupe
-   ```
+  ```bash
+  cd react-movie-cards
+  npm install
+  npm dedupe
+  ```
 
 ### Build
 
-* Build application
+- Build application
 
   This command will also run ESLint as part of build process.
 
@@ -152,7 +154,7 @@ Follow the following steps to get development environment running.
   npm run build
   ```
 
-* Build application and start watching for changes
+- Build application and start watching for changes
 
   This command will also run ESLint as part of build process.
 
@@ -162,13 +164,13 @@ Follow the following steps to get development environment running.
 
 ### Run ESlint
 
-* Lint project using ESLint
+- Lint project using ESLint
 
   ```bash
   npm run lint
   ```
 
-* Lint project using ESLint, and autofix
+- Lint project using ESLint, and autofix
 
   ```bash
   npm run lint:fix
@@ -176,7 +178,7 @@ Follow the following steps to get development environment running.
 
 ### Run
 
-* Run start
+- Run start
 
   This will run the _'serve'_ npm task
 
@@ -184,13 +186,13 @@ Follow the following steps to get development environment running.
   npm start
   ```
 
-* Run webpack dev server
+- Run webpack dev server
 
   ```bash
   npm run serve:dev
   ```
 
-* Alternatively run live-server (simple development http server with live reload capability)
+- Alternatively run live-server (simple development http server with live reload capability)
 
   ```bash
   npm run serve
@@ -204,9 +206,9 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 
 ## Authors
 
-* **Douglas Minnaar** - *Initial work* - [drminnaar](https://github.com/drminnaar)
+- **Douglas Minnaar** - _Initial work_ - [drminnaar](https://github.com/drminnaar)
 
-[Surge]: https://surge.sh/
+[surge]: https://surge.sh/
 [react-starter]: https://github.com/drminnaar/react-starter
 [react-clicker]: https://github.com/drminnaar/react-clicker
 [react-clock-basic]: https://github.com/drminnaar/react-clock-basic
